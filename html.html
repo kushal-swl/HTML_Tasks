@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <style>
+        .headline{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 1px 2px black;
+        
+        }
+        .fakebody{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #e0f2f7; /* Light blue background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .list-box {
+            background-color: #fff; /* White boxes for lists */
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0277bd; /* Blue heading */
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #333; /* Dark gray subheading */
+            border-bottom: 2px solid #eee; /* Light gray line */
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: yellowgreen;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ddd; /* Light gray dashed line */
+            font-size: 1em;
+            text-align: left;
+            padding-left: 20px;
+            margin: 5px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        ol li::before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: #7cb342; /* Green for numbers */
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        ul li::before {
+            content: "• "; /* Simple bullet point */
+            color: #f44336; /* Red for bullets */
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .fruits h2 {
+            color: #ff9800; /* Orange for fruits */
+            margin: 15px;
+        }
+
+        .vegetables h2 {
+            color: #4caf50; /* Green for vegetables */
+            margin: 15px;
+        }
+
+        .groceries h2 {
+            color: #673ab7; /* Purple for groceries */
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="headline">
+        <h1>HTML Lists</h1>
+    </div>
+    <div class="fakebody">
+        <div class="list-box fruits">
+            <h2>Fruits</h2>
+            <ol style="counter-reset: item;">
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Orange</li>
+            </ol>
+        </div>
+        <div class="list-box vegetables">
+            <h2>Vegetables</h2>
+            <ul>
+                <li>Potato</li>
+                <li>Tomato</li>
+                <li>Onion</li>
+            </ul>
+        </div>
+        <div class="list-box groceries">
+            <h2>Other Groceries</h2>
+            <ul>
+                <li>Rice</li>
+                <li>flour</li>
+                <li>pulses</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
