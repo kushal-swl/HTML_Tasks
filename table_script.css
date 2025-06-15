@@ -1,0 +1,20 @@
+#animal-table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#animal-table tr{
+    height: 40px;
+    border-bottom: 2px solid peru;
+}
+
+#animal-table tr:nth-child(odd){
+    background-color:blueviolet;
+    color: antiquewhite;
+}
+#animal-table tr:hover{
+    background-color:crimson;
+    color:black;
+    cursor: pointer;
+}

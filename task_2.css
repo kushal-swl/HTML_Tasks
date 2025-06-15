@@ -1,0 +1,15 @@
+
+
+table, th, td{
+    border: 2px solid salmon;
+    border-radius: 10px;
+
+}
+th, td{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
